@@ -39,3 +39,16 @@ adventurer.companion = {
     }
  }
  
+//Recreating Robin as an instance of the character class
+
+ const robin = new Character("Robin");
+ robin.inventory.push("sword", "potion", "artifact");
+ 
+ robin.companion = new Character("Leo");
+ robin.companion.type = "Cat";
+ 
+ robin.companion.companion = {
+    name: "Frank",
+    type: "Flea",
+    belongings: ["hat", "sunglasses"]
+ };
