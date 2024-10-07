@@ -9,3 +9,8 @@ console.log(adventurer["inventory"]); // Bracket notation
 
 adventurer.inventory.forEach(item => console.log(item));
 
+adventurer.companion = {
+    name: "Leo",
+    type: "Cat"
+ };
+ 
