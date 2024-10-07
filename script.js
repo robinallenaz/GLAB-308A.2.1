@@ -6,3 +6,6 @@ const adventurer = {
  
 console.log(adventurer.inventory); // Dot notation
 console.log(adventurer["inventory"]); // Bracket notation
+
+adventurer.inventory.forEach(item => console.log(item));
+
