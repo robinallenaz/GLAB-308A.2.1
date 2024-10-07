@@ -52,3 +52,16 @@ adventurer.companion = {
     type: "Flea",
     belongings: ["hat", "sunglasses"]
  };
+
+ //Extending the Character class to create an Adventurer class
+
+ class Adventurer extends Character {
+    constructor(name, role) {
+       super(name);
+       this.role = role;
+       this.inventory.push("bedroll", "50 gold coins");
+    }
+    scout() {
+       console.log(`${this.name} is scouting ahead...`);
+       this.roll();
+    }
